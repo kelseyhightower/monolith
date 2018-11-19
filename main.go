@@ -74,8 +74,8 @@ func main() {
 		fmt.Fprintf(w, "Hello World!")
 	})
 
-	mux.HandleFunc("/bar", bar.Handler)
-	mux.HandleFunc("/foo", foo.Handler)
+	mux.HandleFunc("/bar", bar.Server(logger))
+	mux.HandleFunc("/foo", foo.Server(logger))
 
 	localServer := &http.Server{
 		Addr: "127.0.0.1:80",
