@@ -18,6 +18,7 @@ import (
 	"golang.org/x/crypto/acme/autocert"
 
 	"github.com/kelseyhightower/monolith/foo"
+	"github.com/kelseyhightower/monolith/bar"
 )
 
 func main() {
@@ -73,6 +74,7 @@ func main() {
 		fmt.Fprintf(w, "Hello World!")
 	})
 
+	mux.HandleFunc("/bar", bar.Handler)
 	mux.HandleFunc("/foo", foo.Handler)
 
 	localServer := &http.Server{

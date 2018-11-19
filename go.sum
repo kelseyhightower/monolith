@@ -28,6 +28,8 @@ github.com/jmespath/go-jmespath v0.0.0-20160202185014-0b12d6b521d8 h1:12VvqtR6Ao
 github.com/jmespath/go-jmespath v0.0.0-20160202185014-0b12d6b521d8/go.mod h1:Nht3zPeWKUH0NzdCt2Blrr5ys8VGpn0CEB0cQHVjt7k=
 github.com/kelseyhightower/gcscache v0.1.0 h1:1B6tvMY+ymqRPlrxUIB5/ylspjRg0TWfmxG1/ZO4yBM=
 github.com/kelseyhightower/gcscache v0.1.0/go.mod h1:FwjQjEm6JrjP1C3qzsCezvsiv8xAL57por3EKckolDQ=
+github.com/kelseyhightower/monolith/bar v0.0.0-20181119002248-988b039ce844 h1:5h9qWegmQvuotfAXW1+otIO9yvh6IddqRlriYK3QQKM=
+github.com/kelseyhightower/monolith/bar v0.0.0-20181119002248-988b039ce844/go.mod h1:yKZxogEv6ALleVAe9fexDFv62otRhSOru6EFj2+YWJY=
 github.com/kelseyhightower/monolith/foo v0.0.0-20181119001533-8c8bec954359 h1:0cgY3X1h8mmg1g1IcYRJJHus7z+/etmxMsiakrro0cA=
 github.com/kelseyhightower/monolith/foo v0.0.0-20181119001533-8c8bec954359/go.mod h1:DGLLbmR3qsF2/MupPwjlxUY0B5inkaZPYfvuPdrjoXo=
 github.com/kisielk/gotool v1.0.0/go.mod h1:XhKaO+MFFWcvkIS/tQcRk01m1F5IRFswLeQ+oQHNcck=

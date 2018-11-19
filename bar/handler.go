@@ -1,4 +1,4 @@
-package foo
+package bar
 
 import (
 	"fmt"
