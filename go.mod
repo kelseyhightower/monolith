@@ -10,8 +10,8 @@ require (
 	github.com/grpc-ecosystem/grpc-gateway v1.5.1 // indirect
 	github.com/jmespath/go-jmespath v0.0.0-20180206201540-c2b33e8439af // indirect
 	github.com/kelseyhightower/gcscache v0.1.0
-	github.com/kelseyhightower/monolith/bar v0.0.0-20181119020102-e3cea93483ed
-	github.com/kelseyhightower/monolith/foo v0.0.0-20181119020102-e3cea93483ed
+	github.com/kelseyhightower/monolith/bar v0.0.0-20181119020248-da05f518aa78
+	github.com/kelseyhightower/monolith/foo v0.0.0-20181119020248-da05f518aa78
 	github.com/openzipkin/zipkin-go v0.1.3 // indirect
 	github.com/prometheus/client_golang v0.9.1 // indirect
 	github.com/prometheus/common v0.0.0-20181116084131-1f2c4f3cd6db // indirect

@@ -7,7 +7,6 @@ import (
 
 	"cloud.google.com/go/logging"
 	"go.opencensus.io/plugin/ochttp"
-	"go.opencensus.io/trace"
 )
 
 type handler struct {
@@ -25,16 +24,13 @@ func Server(logger *logging.Logger) http.Handler {
 }
 
 func (h *handler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
-	ctx, span := trace.StartSpan(r.Context(), "foo")
-	defer span.End()
-
 	request, err := http.NewRequest("GET", "http://127.0.0.1/bar", nil)
 	if err != nil {
 		http.Error(w, err.Error(), 500)
 		return
 	}
 
-	request = request.WithContext(ctx)
+	request = request.WithContext(r.Context())
 
 	response, err := h.client.Do(request)
 	if err != nil {
