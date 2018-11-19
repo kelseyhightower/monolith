@@ -1,1 +1,1 @@
-module github.com/kelseyhightower/foo
+module github.com/kelseyhightower/monolith/foo

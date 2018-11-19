@@ -17,7 +17,7 @@ import (
 	"go.opencensus.io/trace"
 	"golang.org/x/crypto/acme/autocert"
 
-	"github.com/kelseyhightower/foo"
+	"github.com/kelseyhightower/monolith/foo"
 )
 
 func main() {

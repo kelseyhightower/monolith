@@ -14,5 +14,3 @@ require (
 	go.opencensus.io v0.18.0
 	golang.org/x/crypto v0.0.0-20181112202954-3d3f9f413869
 )
-
-replace github.com/kelseyhightower/foo => ./foo
