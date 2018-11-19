@@ -40,10 +40,14 @@ github.com/kelseyhightower/monolith/bar v0.0.0-20181119002727-9b4d80885a83 h1:SR
 github.com/kelseyhightower/monolith/bar v0.0.0-20181119002727-9b4d80885a83/go.mod h1:yKZxogEv6ALleVAe9fexDFv62otRhSOru6EFj2+YWJY=
 github.com/kelseyhightower/monolith/bar v0.0.0-20181119014621-028cdb21d5b9 h1:XGRQdMFLBcoYlF2wDx2voSAg/fh9yQBTL8fzXXOpfHo=
 github.com/kelseyhightower/monolith/bar v0.0.0-20181119014621-028cdb21d5b9/go.mod h1:Ff50+z190huPkl2+qbgosI8Mu+Bvvqm3PGa/GU219v0=
+github.com/kelseyhightower/monolith/bar v0.0.0-20181119020102-e3cea93483ed h1:QhZKZLJHj40b76WGU9nGD8MPo8qooOSAWaG6iPPs3E8=
+github.com/kelseyhightower/monolith/bar v0.0.0-20181119020102-e3cea93483ed/go.mod h1:q0BNIzDszDGN0ETNGTVwUY+TLj3+nUVzwSxiZ4HAryY=
 github.com/kelseyhightower/monolith/foo v0.0.0-20181119003134-e242f855b310 h1:trR5F9bx11ZGCGvtiTVJ2lo7EAV1sTO6VuvHLnI0G6E=
 github.com/kelseyhightower/monolith/foo v0.0.0-20181119003134-e242f855b310/go.mod h1:DGLLbmR3qsF2/MupPwjlxUY0B5inkaZPYfvuPdrjoXo=
 github.com/kelseyhightower/monolith/foo v0.0.0-20181119014621-028cdb21d5b9 h1:3oNvAt5UlWzoU/kgQWCLdDuSHu7fS2tR4jCzqvlxJxc=
 github.com/kelseyhightower/monolith/foo v0.0.0-20181119014621-028cdb21d5b9/go.mod h1:10t5vZHhVlrNLmwMHaehP3TpvjWlKtjfYCLu2tsgm/Y=
+github.com/kelseyhightower/monolith/foo v0.0.0-20181119020102-e3cea93483ed h1:WCwFIy0MI2/NXhZLn0M8BSa/o+AkfToVCXI/RFcMZBk=
+github.com/kelseyhightower/monolith/foo v0.0.0-20181119020102-e3cea93483ed/go.mod h1:G7CtL9LOXode4rhlmyBJqdtjWTbMQ7DJ/t/+88MSdY8=
 github.com/kisielk/gotool v1.0.0/go.mod h1:XhKaO+MFFWcvkIS/tQcRk01m1F5IRFswLeQ+oQHNcck=
 github.com/matttproud/golang_protobuf_extensions v1.0.1/go.mod h1:D8He9yQNgCq6Z5Ld7szi9bcBfOoFv/3dc6xSMkL2PC0=
 github.com/openzipkin/zipkin-go v0.1.1/go.mod h1:NtoC/o8u3JlF1lSlyPNswIbeQH9bJTmOf0Erfk+hxe8=

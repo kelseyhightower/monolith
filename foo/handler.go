@@ -8,7 +8,6 @@ import (
 	"cloud.google.com/go/logging"
 	"go.opencensus.io/plugin/ochttp"
 	"go.opencensus.io/trace"
-	"go.opencensus.io/trace/propagation"
 )
 
 type handler struct {
@@ -19,9 +18,7 @@ type handler struct {
 // Server returns a handler that HTTP requests.
 func Server(logger *logging.Logger) http.Handler {
 	client := &http.Client{
-		Transport: &ochttp.Transport{
-			Propagation: &propagation.HTTPFormat{},
-		},
+		Transport: &ochttp.Transport{},
 	}
 
 	return &handler{client, logger}
