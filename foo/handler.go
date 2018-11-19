@@ -6,19 +6,40 @@ import (
 	"net/http"
 
 	"cloud.google.com/go/logging"
+	"go.opencensus.io/plugin/ochttp"
+	"go.opencensus.io/trace"
+	"go.opencensus.io/trace/propagation"
 )
 
 type handler struct {
+	client *http.Client
 	logger *logging.Logger
 }
 
 // Server returns a handler that HTTP requests.
 func Server(logger *logging.Logger) http.Handler {
-	return &handler{logger}
+	client := &http.Client{
+		Transport: &ochttp.Transport{
+			Propagation: &propagation.HTTPFormat{},
+		},
+	}
+
+	return &handler{client, logger}
 }
 
 func (h *handler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
-	response, err := http.Get("http://127.0.0.1/bar")
+	ctx, span := trace.StartSpan(r.Context(), "foo")
+	defer span.End()
+
+	request, err := http.NewRequest("GET", "http://127.0.0.1/bar", nil)
+	if err != nil {
+		http.Error(w, err.Error(), 500)
+		return
+	}
+
+	request = request.WithContext(ctx)
+
+	response, err := h.client.Do(request)
 	if err != nil {
 		http.Error(w, err.Error(), 500)
 		return
